@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!--Link a css-->
+
+    <style>
+        tr, td, th{
+            border: 2px solid black;
+        }
+        h1 { color: red;
+
+        }
+        
+        p{
+            color: rgb(95, 105, 248);
+        }
+    </style>
 </head>
 <body>
     <h1>Soy la pagina productos</h1>
+
+    <!--Tablas en html-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <table style="background: rgb(160, 160, 248)">
+        <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>Provincia</th>
+            <th>Voto</th>
+            </tr>
+            
+        </thead>
+        <tbody class="verde">
+            <tr >
+                <td>Pepe</td>
+                <td>Perez</td>
+                <td>123456</td>
+                <td>Misiones</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>1236548</td>
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+            <tr rowspan="2">
+                <td>Juan</td>
+                <td>Perez</td>
+                <td rowspan="2">1236548</td>
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <!--td >1236548</td -->
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <td colspan="5">Total votos</td>
+        </tfoot>
+    </table>
+    
+
+        <h1 id="normal" >hola</h1>
+        <h1 class="azul mayusculas">hola</h1>
+        <h1>hola</h1>
+        <h1 class="verde">hola</h1>
+        <h1 class="azul" id="cursiva">hola</h1>
+        <h1>hola</h1>
+        <h1>hola</h1>
+        <p>Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit. Beatae facere veritatis id. Minima eum repudiandae</i> inventore delectus sunt vitae, eos vel corrupti omnis recusandae vero doloremque similique sed commodi sequi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptates facere, laboriosam at numquam nam ea ex autem omnis consectetur corrupti aperiam fugiat dolore error ratione molestiae provident, quas nihil!</p>
+
+        <img class="imagen" src="../assets/7DEIMH4HH5J4QA4YXD2IHIJDZQ (1).avif" alt="Messi en la copa">
+
+
 </body>
 </html>
